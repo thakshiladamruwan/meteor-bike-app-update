@@ -1,0 +1,76 @@
+<template name = "rdetails">
+
+<head>
+    <title>Bikers Club | Contact Us</title>
+    <meta charset="iso-8859-1" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+
+<div id="page">
+    <div id="header">
+        <!-- start of header -->
+        <ul>
+            <li><a href="bikehome">home</a></li>
+            <li><a href="/about">about</a></li>
+            <li><a href="/events">events</a></li>
+            <li><a href="/gallery">gallery</a></li>
+            <li><a href="/blog">blog</a></li>
+            <li class="current"><a href="/rdetails.html">members</a></li>
+        </ul>
+        <div> <a href="/register" class="join"></a>
+            <h3>PROIN AC EUISMOD MI</h3>
+            <p>Suspe disse vitae diam</p>
+        </div>
+    </div>
+    <!-- end of header -->
+    <div id="body">
+        <div class="contents">
+
+
+            <!-- start of content -->
+            <h1>Registered DETAILS</h1>
+            <ol>
+                <table class="table-bordered table-condensed">
+                    <thead>
+                    <tr>
+                        <th>Checked</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Email</th>
+                        <th>Action</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {{#each resolutions}}
+
+                        {{>student}}
+                    {{/each}}
+
+
+                    </tbody>
+                </table>
+            </ol>
+        </div>
+        <!-- end of contents -->
+    </div>
+    <!-- end of body wrapper -->
+</div>
+
+
+<div id="footer">
+    <!-- start of footer part -->
+    <div>
+        <ul>
+            <li><a href="#" class="fb">Facebook</a></li>
+            <li><a href="#" class="twitr">Twitter</a></li>
+        </ul>
+        <span>Copyright &copy; <a href="#">Domain Name</a> - All Rights Reserved | Template By <a target="_blank" href="http://www.freewebsitetemplates.com/">FreeWebsiteTemplates.com</a></span> </div>
+</div>
+<!-- end of footer part -->
+</body>
+
+</template>
